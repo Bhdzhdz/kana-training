@@ -17,3 +17,18 @@ ignorePorts = false
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[workflows]
+runButton = "Run"
+
+[[workflows.workflow]]
+name = "Run"
+mode = "sequential"
+author = 2172277
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "vite --port 3000"
+
+[agent]
+expertMode = true

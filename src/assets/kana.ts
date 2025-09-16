@@ -1,0 +1,131 @@
+export type KanaSet = { [char: string]: string };
+
+export const kana: Record<string, KanaSet> = {
+  'hsingle' : 
+    { 'あ': 'a', 'い': 'i', 'う': 'u', 'え': 'e', 'お': 'o'},
+  'hk':
+    { 'か': 'ka', 'き': 'ki', 'く': 'ku', 'け': 'ke', 'こ': 'ko'},
+  'hs':
+    { 'さ': 'sa', 'し': 'shi', 'す': 'su', 'せ': 'se', 'そ': 'so'},
+  'ht':
+    { 'た': 'ta', 'ち': 'chi', 'つ': 'tsu', 'て': 'te', 'と': 'to'},
+  'hn':
+    { 'な': 'na', 'に': 'ni', 'ぬ': 'nu', 'ね': 'ne', 'の': 'no'},
+  'hh':
+    { 'は': 'ha', 'ひ': 'hi', 'ふ': 'fu', 'へ': 'he', 'ほ': 'ho'},
+  'hm':
+    { 'ま': 'ma', 'み': 'mi', 'む': 'mu', 'め': 'me', 'も': 'mo'},
+  'hy':
+    { 'や': 'ya', 'ゆ': 'yu', 'よ': 'yo'},
+  'hr':
+    { 'ら': 'ra', 'り': 'ri', 'る': 'ru', 'れ': 're', 'ろ': 'ro'},
+  'hw':
+    { 'わ': 'wa', 'を': 'o'},
+  'hn1':
+    { 'ん': 'n'},
+  'hg':
+    { 'が': 'ga', 'ぎ': 'gi', 'ぐ': 'gu', 'げ': 'ge', 'ご': 'go'},
+  'hz':
+    { 'ざ': 'za', 'じ': 'ji', 'ず': 'zu', 'ぜ': 'ze', 'ぞ': 'zo'},
+  'hd':
+    { 'だ': 'da', 'ぢ': 'ji', 'づ': 'zu', 'で': 'de', 'ど': 'do'},
+  'hb':
+    { 'ば': 'ba', 'び': 'bi', 'ぶ': 'bu', 'べ': 'be', 'ぼ': 'bo'},
+  'hp':
+    { 'ぱ': 'pa', 'ぴ': 'pi', 'ぷ': 'pu', 'ぺ': 'pe', 'ぽ': 'po'},
+
+  'hdk':
+    { 'きゃ': 'kya', 'きゅ': 'kyu', 'きょ': 'kyo'},
+  'hds':
+    { 'しゃ': 'sha', 'しゅ': 'shu', 'しょ': 'sho'},
+  'hdc':
+    { 'ちゃ': 'cha', 'ちゅ': 'chu', 'ちょ': 'cho'},
+  'hdn':
+    { 'にゃ': 'nya', 'にゅ': 'nyu', 'にょ': 'nyo'},
+  'hdh':
+    { 'ひゃ': 'hya', 'ひゅ': 'hyu', 'ひょ': 'hyo'},
+  'hdm':
+    { 'みゃ': 'mya', 'みゅ': 'myu', 'みょ': 'myo'},
+  'hdr':
+    { 'りゃ': 'rya', 'りゅ': 'ryu', 'りょ': 'ryo'},
+  'hdg':
+    { 'ぎゃ': 'gya', 'ぎゅ': 'gyu', 'ぎょ': 'gyo'},
+  'hdj':
+    { 'じゃ': 'ja', 'じゅ': 'ju', 'じょ': 'jo'},
+  'hdj2':
+    { 'ぢゃ': 'ja', 'ぢゅ': 'ju', 'ぢょ': 'jo'},
+  'hdb':
+    { 'びゃ': 'bya', 'びゅ': 'byu', 'びょ': 'byo'},
+  'hdp':
+    { 'ぴゃ': 'pya', 'ぴゅ': 'pyu', 'ぴょ': 'pyo'},
+
+
+  'ksingle' : 
+    { 'ア': 'a', 'イ': 'i', 'ウ': 'u', 'エ': 'e', 'オ': 'o'},
+  'kk':
+    { 'カ': 'ka', 'キ': 'ki', 'ク': 'ku', 'ケ': 'ke', 'コ': 'ko'},
+  'ks':
+    { 'サ': 'sa', 'シ': 'shi', 'ス': 'su', 'セ': 'se', 'ソ': 'so'},
+  'kt':
+    { 'タ': 'ta', 'チ': 'chi', 'ツ': 'tsu', 'テ': 'te', 'ト': 'to'},
+  'kn':
+    { 'ナ': 'na', 'ニ': 'ni', 'ヌ': 'nu', 'ネ': 'ne', 'ノ': 'no'},
+  'kh':
+    { 'ハ': 'ha', 'ヒ': 'hi', 'フ': 'fu', 'ヘ': 'he', 'ホ': 'ho'},
+  'km':
+    { 'マ': 'ma', 'ミ': 'mi', 'ム': 'mu', 'メ': 'me', 'モ': 'mo'},
+  'ky':
+    { 'ヤ': 'ya', 'ユ': 'yu', 'ヨ': 'yo'},
+  'kr':
+    { 'ラ': 'ra', 'リ': 'ri', 'ル': 'ru', 'レ': 're', 'ロ': 'ro'},
+  'kw':
+    { 'ワ': 'wa', 'ヲ': 'o'},
+  'kn1':
+    { 'ン': 'n'},
+  'kg':
+    { 'ガ': 'ga', 'ギ': 'gi', 'グ': 'gu', 'ゲ': 'ge', 'ゴ': 'go'},
+  'kz':
+    { 'ザ': 'za', 'ジ': 'ji', 'ズ': 'zu', 'ゼ': 'ze', 'ゾ': 'zo'},
+  'kd':
+    { 'ダ': 'da', 'ヂ': 'ji', 'ヅ': 'zu', 'デ': 'de', 'ド': 'do'},
+  'kb':
+    { 'バ': 'ba', 'ビ': 'bi', 'ブ': 'bu', 'ベ': 'be', 'ボ': 'bo'},
+  'kp':
+    { 'パ': 'pa', 'ピ': 'pi', 'プ': 'pu', 'ペ': 'pe', 'ポ': 'po'},
+
+  'kdk':
+    { 'キャ': 'kya', 'キュ': 'kyu', 'キョ': 'kyo'},
+  'kds':
+    { 'シャ': 'sha', 'シュ': 'shu', 'ショ': 'sho'},
+  'kdc':
+    { 'チャ': 'cha', 'チュ': 'chu', 'チョ': 'cho'},
+  'kdn':
+    { 'ニャ': 'nya', 'ニュ': 'nyu', 'ニョ': 'nyo'},
+  'kdh':
+    { 'ヒャ': 'hya', 'ヒュ': 'hyu', 'ヒョ': 'hyo'},
+  'kdm':
+    { 'ミャ': 'mya', 'ミュ': 'myu', 'ミョ': 'myo'},
+  'kdr':
+    { 'リャ': 'rya', 'リュ': 'ryu', 'リョ': 'ryo'},
+  'kdg':
+    { 'ギャ': 'gya', 'ギュ': 'gyu', 'ギョ': 'gyo'},
+  'kdj':
+    { 'ジャ': 'ja', 'ジュ': 'ju', 'ジョ': 'jo'},
+  'kdj2':
+    { 'ヂャ': 'ja', 'ヂュ': 'ju', 'ヂョ': 'jo'},
+  'kdb':
+    { 'ビャ': 'bya', 'ビュ': 'byu', 'ビョ': 'byo'},
+  'kdp':
+    { 'ピャ': 'pya', 'ピュ': 'pyu', 'ピョ': 'pyo'},
+};
+
+export const getAudioUrl = (romaji: string) =>
+  `https://github.com/djtguide/djtguide.github.io/raw/refs/heads/main/learn/kana/audio/${romaji}.mp3`;
+
+/** Utility: Flatten selected kana groups into a single list of [kana, romaji] pairs */
+export const flattenKanaSets = (selectedGroups: string[]): [string, string][] => {
+  return selectedGroups.flatMap((group) =>
+    Object.entries(kana[group] || {})
+  );
+};
+
