@@ -11,6 +11,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "/kana-training/",
   server: {
     host: "0.0.0.0",
     allowedHosts: [
